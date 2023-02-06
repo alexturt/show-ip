@@ -16,11 +16,17 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,//true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src", "src/global.d.ts"
+  ],
+  "exclude": [
+    "src/main.js",
+    "src/allip.js",
+    "src/localip.js",
+    "src/preload.js"
   ]
 }
